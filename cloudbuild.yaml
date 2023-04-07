@@ -1,0 +1,18 @@
+substitutions:
+  _FUNCTION_NAME: ''
+  _ENTRY_POINT: ''
+
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  args:
+    - 'functions'
+    - 'deploy'
+    - '${_FUNCTION_NAME}'
+    - '--source=target/deploy'
+    - '--runtime=java17'
+    - '--trigger-http'
+    - '--allow-unauthenticated'
+    - '--memory=256MB'
+    - '--entry-point=${_ENTRY_POINT}'
+  id: 'deploy'
