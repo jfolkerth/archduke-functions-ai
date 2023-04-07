@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "k--kato.intellij-idea-keybindings",
+        "vscjava.vscode-java-pack",
+        "github.copilot",
+        "redhat.vscode-xml"
+    ]
+}
