@@ -9,7 +9,6 @@ steps:
     - 'functions'
     - 'deploy'
     - '${_FUNCTION_NAME}'
-    - '--source=target/deploy'
     - '--runtime=java17'
     - '--trigger-http'
     - '--allow-unauthenticated'
